@@ -15,8 +15,7 @@ public class Main {
                 [5] - Quick Sort - Ainda não implementado
                 [6] - Heap Sort - Ainda não implementado
                 [0] - Sair
-                    =>
-                """;
+                => """;
 
         do {
             System.out.println(breakline);
