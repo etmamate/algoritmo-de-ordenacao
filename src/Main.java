@@ -29,7 +29,7 @@ public class Main {
             }
             System.out.println(" ");
 
-            System.out.println(breakline);
+            System.out.println(breakline + " ");
             System.out.print(menu);
 
             opcao = scn.nextInt();
@@ -37,7 +37,21 @@ public class Main {
             switch (opcao) {
 
                 case 1:
+                    long inicio = System.currentTimeMillis();
                     bubbleSort(vetor);
+                    long fim = System.currentTimeMillis();
+                    
+                    System.out.println(breakline);
+                    System.out.print("Vetor Organizado: ");
+                    for (int i = 0; i < vetor.length; i++) {
+                        System.out.print(vetor[i]);
+                    }
+                    System.out.println(" ");
+                    System.out.println("Tempo de Ordenacao: " + (fim - inicio));
+                
+
+                    break;
+
                 case 2:
                     insertionSort(vetor);
                 case 3:
@@ -51,7 +65,7 @@ public class Main {
 
     public static void bubbleSort(int[] vetor) {
 
-        long inicio = System.currentTimeMillis();
+        // long inicio = System.currentTimeMillis();
 
         // bubble sort
         int aux;
@@ -64,9 +78,10 @@ public class Main {
                 }
             }
         }
-        long fim = System.currentTimeMillis();
 
-        System.out.println("\nTempo de ordenação:" + (fim - inicio));
+        // long fim = System.currentTimeMillis();
+
+        // System.out.println("\nTempo de ordenação:" + (fim - inicio));
     }
 
     public static void insertionSort(int[] vetor) {
