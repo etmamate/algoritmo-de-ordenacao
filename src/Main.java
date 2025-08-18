@@ -48,14 +48,34 @@ public class Main {
                     }
                     System.out.println(" ");
                     System.out.println("Tempo de Ordenacao: " + (fim - inicio));
-                
-
+                    
+                    
                     break;
 
                 case 2:
+                    long inicio2 = System.currentTimeMillis();
                     insertionSort(vetor);
+                    long fim2 = System.currentTimeMillis();
+                    
+                    System.out.println(breakline);
+                    System.out.print("Vetor Organizado: ");
+                    for (int i = 0; i < vetor.length; i++) {
+                        System.out.print(vetor[i]);
+                    }
+                    System.out.println(" ");
+                    System.out.println("Tempo de Ordenacao: " + (fim2 - inicio2));
                 case 3:
+                    long inicio3 = System.currentTimeMillis();
                     selectionSort(vetor);
+                    long fim3 = System.currentTimeMillis();
+                    
+                    System.out.println(breakline);
+                    System.out.print("Vetor Organizado: ");
+                    for (int i = 0; i < vetor.length; i++) {
+                        System.out.print(vetor[i]);
+                    }
+                    System.out.println(" ");
+                    System.out.println("Tempo de Ordenacao: " + (fim3 - inicio3));
 
             }
 
